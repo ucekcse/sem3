@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ucek cse</title>
+    <link rel="icon" type="image/png" sizes="32x32" href="https://www.transparentpng.com/thumb/anonymous-mask/anonymous-mask-icon-png-25.png" alt="anonymous mask icon png @transparentpng.com ">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+<style>
+      *{
+    padding:0px;
+    margin:0px;
+    box-sizing: border-box;
+}
+.nav{
+    width:100vw;
+    display: flex;
+    justify-content: center;
+    font-family: "Inter", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+}
+.navv{
+    margin-top:1%;
+    width:90vw;
+    height:12vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    justify-content: space-between;
+}
+#ul {
+    width:36%;
+    display: flex;
+    justify-content: space-between;
+    list-style-type: none;
+    font-size:19px;
+    color:hsl(0, 0%, 0%);
+}
+#ul li{
+  padding:10px;
+
+}
+#ul li:hover{
+    cursor: pointer;
+   color:rgb(255, 255, 255);
+   background-color: rgb(39, 37, 37);
+}
+.sidebar{
+    width:70vw;
+    height:100vh;
+    position: fixed;
+    z-index: 999;
+    top:0;
+    right:0;
+    background-color: white;
+    box-shadow: -5px 5px 5px rgba(66, 63, 63, 0.589);
+    display:none;
+}
+.navvv{
+    margin-top:1%;
+    width:100%;
+    height:30vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    justify-content: space-between;
+}
+.navvv img{
+    margin-left:50%;
+    width:22px;
+    height:22px;
+    margin-top:5%;
+}
+#ull{
+    width:70%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    list-style-type: none;
+    font-size:16px;
+    color:hsl(236, 13%, 42%);
+    justify-content: flex-start;
+    color:rgb(24, 23, 23);
+    
+}
+#ull li:hover{
+   border: 0.5px solid rgba(0, 0, 0, 0.164);
+    background-color:rgba(155, 154, 154, 0.062);
+    cursor: pointer;
+
+}
+#ull li{
+    margin-top: 10px;
+}
+#ull li{
+  margin-top: 10px;
+}
+img{
+  cursor: pointer;
+}
+#open{
+  cursor: pointer; 
+  display:none; 
+}
+
+/*--------------------------*/
+.logo{
+    width:80px;
+    height:80px;
+}
+.lineupper{
+    display:flex;
+    width:100%;
+    height:1px;
+background:black;
+}
+.content{
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    justify-content: space-evenly;
+    width:100vw;
+    height:72vh;
+    flex-direction: column;
+    margin-top: 4%;
+    margin-bottom:4%;
+    background-color:white;
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+.sub{
+    width:300px;
+    height:120px;
+    background-color: whitesmoke;
+    border:1px solid black;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 22px;
+    flex-direction: column;
+
+}
+.taskbar{
+    width:100vw;
+    height:120px;
+    background-color: black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    color:white;
+}
+.taskbar_text{
+    width:100%;
+    height:100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 20px;
+   
+}
+
+a{
+    text-decoration: none;
+       }
+       .sub:hover{
+           background-color: rgb(27, 27, 27);
+           color:white;
+       }
+       a:visited{
+           color:rgb(0, 0, 0);
+       }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media only screen and (max-width: 600px){
+    #ul{
+        display:none
+       }
+     
+       #open{
+        display:flex;
+       }
+       #ull{
+           width:50%;
+           display: flex;
+           flex-direction: column;
+           justify-content: space-between;
+           list-style-type: none;
+           font-size:20px;
+           color:hsl(0, 0%, 11%);
+           justify-content: flex-start;  
+       }
+       #ull li{
+           margin-top: 10px;
+           padding:10px;
+           color:rgb(0, 0, 0);
+       }
+       #ull li:hover{
+           border: 0.5px solid rgba(0, 0, 0, 0.164);
+            background-color:rgb(2, 2, 2);
+            cursor: pointer;
+            color:white;
+        }
+        /*------------------------------------*/
+        .logo{
+            width:70px;
+            height:70px;
+        }
+        .content{
+            display:flex;
+            align-items: center;
+            justify-content: center;
+            justify-content: space-evenly;
+            width:100vw;
+            height:72vh;
+            flex-direction: column;
+            margin-top: 4%;
+            margin-bottom:4%;
+            background-color:white;
+            font-family: "Poppins", sans-serif;
+            font-weight: 400;
+            font-style: normal;
+        }
+        .sub{
+            width:300px;
+            height:120px;
+            background-color: whitesmoke;
+            border:1px solid black;
+            display:flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 22px;
+            flex-direction: column;
+
+        }
+        .taskbar{
+            width:100vw;
+            height:120px;
+            background-color: black;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-family: "Poppins", sans-serif;
+            font-weight: 400;
+            font-style: normal;
+            color:white;
+        }
+        .taskbar_text{
+            width:100%;
+            height:100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 20px;
+           
+        }
+        
+        
+        
+}
+
+</style>
+</head>
+<body>
+    <div class="nav">
+        <div class="navv">
+           <a href="#"><img src="logo.png" class="logo"/></a>
+                 <ul id="ul">
+                    <a href="index.html" > <li>Home</li></a> 
+                    <a href="task.html"><li>Task</li></a> 
+                    <a href="help.html" ><li>Help</li></a> 
+                    <a href="about.html"> <li>About</li></a> 
+                 </ul>
+                 <img src="icon-menu.svg" onclick="sideopen()" id="open"/>
+       </div>
+      
+   </div>
+   <div class="lineupper"></div>
+   <div class="sidebar" id="showww">
+     <div class="navvv">
+        <img src="icon-menu-close.svg" onclick="sideclose()" id="close"/>
+              <ul id="ull">
+                <a href="index.html" > <li>Home</li></a> 
+                <a href="task.html"><li>Task</li></a> 
+                <a href="help.html" ><li>Help</li></a> 
+                <a href="about.html"> <li>About</li></a> 
+              </ul>
+    </div>
+</div>
+<div class="content">
+   <a href="page1DM.html"> <div onclick="note()" class="sub one">
+        <p>ClassWork</p>
+    </div>
+</a>
+<a href="page2DM.html"> <div class="sub two">
+        <p>Study Materials</p>
+    </div></a>
+    <a href="page3DM.html">   <div class="sub three">
+        <p>PYQ's</p>
+    </div></a>
+    
+    </div>
+<div class="taskbar">
+    <p class="taskbar_text">@UCEK CSE 2023-2027 </p>
+</div>
+    <script >
+
+function sideopen(){
+    document.getElementById("showww").style.display="flex";
+}
+function sideclose(){
+    document.getElementById("showww").style.display="none";
+
+}
+function note(){
+alert("Note:This is not for exams only to get Sign from staff's!")
+}
+
+    </script>
+</body>
+</html>
