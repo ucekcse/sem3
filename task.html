@@ -191,7 +191,7 @@ a{
         }
         span{
             color:rgb(255, 0, 0);
-            font-family:monospace;
+            font-family:sans-serif;
         }
 
 
@@ -355,32 +355,32 @@ a{
     <div class="lineupper"></div>
     <p>Complete all 
         7 experiments.</p>
-    <p>Deadline:<span>16/09/2024</span></p>
+    <p>Deadline:<span id="dsi">16/09/2024</span></p>
   
     <div class="lineupper"></div>
     <p  class="topic">Data Structure</p>
     <div class="lineupper"></div>
     <p>Compelete (1a,1b,2,3a,3b,4,5b) experiments</p>
-    <p>Deadline:<span>13/09/2024</span></p>
+    <p>Deadline:<span> Ended</span></p>
  
    <div class="lineupper"></div>
     <p  class="topic">OOP's</p>
     <div class="lineupper"></div>
     <p>Compelete first 2 experiments</p>
-    <p>Deadline:<span>10/09/2024</span></p>
+    <p>Deadline:<span> Ended</span></p>
 
   
    <div class="lineupper"></div>
     <p  class="topic">Discrete Mathematics</p>
     <div class="lineupper"></div>
     <p>prepare unit 2,3 for test</p>
-    <p>Deadline:<span>18/09/2024</span></p>
+    <p>Deadline:<span id="dm">18/09/2024</span></p>
     
     <div class="lineupper"></div>
    <p class="topic">DPCO</p>
    <div class="lineupper"></div>
     <p>Compelete first 2 experiments</p>
-    <p>Deadline:<span>13/09/2024</span></p>
+    <p>Deadline:<span> Ended</span></p>
    </div>
  </div>
 <div class="taskbar">
@@ -394,6 +394,50 @@ function sideclose(){
     document.getElementById("showww").style.display="none";
 
 }
+
+const countDownDatedsi = new Date("Sep 16, 2024 16:30:00").getTime();
+const dsi = document.getElementById("dsi");
+const countDownDatedm = new Date("Sep 18, 2024 10:00:00").getTime();
+const dm = document.getElementById("dm");
+
+
+const intervaldsi = setInterval(() => {
+  const now = new Date().getTime();
+  const dsiduration = countDownDatedsi - now;
+  
+  if (dsiduration < 0) {
+    clearInterval(intervaldsi);
+    dsi.innerHTML = " Ended";
+    return;
+  }
+  
+  updateDuration(dsiduration, dsi);  
+}); 
+
+
+const intervaldm = setInterval(() => {
+  const now = new Date().getTime();
+  const dmduration = countDownDatedm - now;
+
+  if (dmduration < 0) {
+    clearInterval(intervaldm);
+    dm.innerHTML = "Ended";
+    return;
+  }
+
+  updateDuration(dmduration, dm);  
+} );  
+
+function updateDuration(duration, element) {
+  const days = Math.floor(duration / (1000 * 60 * 60 * 24));
+  const hours = Math.floor((duration % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+  const minutes = Math.floor((duration % (1000 * 60 * 60)) / (1000 * 60));
+  const seconds = Math.floor((duration % (1000 * 60)) / 1000);
+
+ 
+  element.innerHTML = ` ${days}D ${hours}H ${minutes}M ${seconds}S`;
+}
+
 </script>
 </body>
 </html>
