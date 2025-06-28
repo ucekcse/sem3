@@ -1,4 +1,7 @@
+# SEM 3
 
-Site_link: https://ucekcse.github.io/sem3/
+This site is created to make it easier for everyone in our class to access and share study materials.  
+It’s meant to be a simple, shared space where we can all find notes and resources that we want!
 
-https://drive.google.com/drive/folders/1dJyb6Az523S19ZvkD3ykBm0stWX1fRch
+## Site Link
+[Visit the site](https://ucekcse.github.io/sem3/)
